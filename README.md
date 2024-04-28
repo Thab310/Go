@@ -1,2 +1,1 @@
-# Go
-
+![Diagrams](/images/2560px-Go_Logo_Blue.svg.png)
