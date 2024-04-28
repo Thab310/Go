@@ -17,3 +17,7 @@ Hello World!
 Install Go
 sudo snap install go --classic
 go version
+
+![Diagrams](/../Go/images/go_cli.png) 
+![Diagrams](/../Go/images/types_of_packages.png)
+![Diagrams](/../Go/images/go_package.png)
