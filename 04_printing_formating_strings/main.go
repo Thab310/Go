@@ -31,4 +31,3 @@ func main()  {
 	var str = fmt.Sprintf("Hi my name is %v and I am %v \n", name, age)
 	fmt.Println("My bio is:",str)
 }
-
