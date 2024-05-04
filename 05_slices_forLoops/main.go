@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	car := []string {"bmw","mercedez","toyota"}
+	car := []string {"bmw","mercedez","toyota"} 
 	var boat = []string {"kawasaki","honda", "lamborghini"}
 	fmt.Println(car)
 	fmt.Println(boat)
