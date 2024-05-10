@@ -22,9 +22,20 @@ func main () {
 		fmt.Println(names[i])
 	}
 
+	dataSet := []string {"car", "bike", "plane", "boat"}
+
+	for x := 0; x < len(dataSet); x++{
+		fmt.Printf("%v is number %v \n",dataSet[x],x)
+	} 
+
+
 	//eg.4
 	for index, value := range names {
 		fmt.Printf("The position at index %v is %v", index, value)
+	}
+
+	for _, value := range names {
+		fmt.Println("The value is: \n",value)
 	}
 
 }
