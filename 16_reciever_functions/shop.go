@@ -20,7 +20,8 @@ func newShop(n string) shop {
 
 // format function can only be called by the shop objects
 func (s shop) format() string {
-	fs := "shop breakdown: \n"
+	fs := fmt.Sprintf("%v \n", s.name)
+	fs += "menu: \n"
 	var total float64 = 0
 
 	//list items
@@ -30,7 +31,7 @@ func (s shop) format() string {
 	}
 
 	//total
-	fs += fmt.Sprintf("%-30v ...R%0.2f", "total:", total)
+	fs += fmt.Sprintf("%-30v ...R%0.2f", "total for 3:", total)
 
 	return fs
 }

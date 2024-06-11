@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	myShop := newShop("Thabelo's shop")
+	myShop := newShop("Welcome to Thabelo's butchery")
 
-	myShop.format()
 	fmt.Println(myShop.format())
 }
