@@ -14,19 +14,19 @@ func getInput(prompt string, r *bufio.Reader) (string, error) {
 	return strings.TrimSpace(input), err
 }
 
-func createShop() bill {
+func createBill() bill {
 	reader := bufio.NewReader(os.Stdin)
 
 	name, _ := getInput("Create a new bill name: ", reader)
 
-	b := newbill(name)
+	b := newBill(name)
 	fmt.Println("Created the bill - ", b.name)
 
 	return b
 }
 
 func main() {
-	myBill := createShop()
+	myBill := createBill()
 
 	fmt.Println(myBill)
 }
