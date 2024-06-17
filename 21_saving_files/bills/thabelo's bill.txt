@@ -1,0 +1,5 @@
+thabelo's bill 
+bill: 
+fish:                          ...R45.91 
+tip:                           ...R15 
+total for 3:                   ...R60.91
