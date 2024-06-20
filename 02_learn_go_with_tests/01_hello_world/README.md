@@ -27,3 +27,5 @@ go test
 * Write enough code to make the test pass
 
 * Refactor
+
+4. Go source files can only have one package per directory
