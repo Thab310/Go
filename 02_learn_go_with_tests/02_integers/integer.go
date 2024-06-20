@@ -2,7 +2,7 @@ package integers
 
 import "fmt"
 
-func AddInt(n int, m int) int {
+func AddInt(n, m int) int {
 	return n + m
 }
 
