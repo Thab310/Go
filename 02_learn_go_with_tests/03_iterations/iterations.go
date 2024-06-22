@@ -1,8 +1,6 @@
 package main
 
-const repeatedCount = 5
-
-func Repeat(n string) string {
+func Repeat(n string, repeatedCount int) string {
 	var repeated string
 	for i := 0; i < repeatedCount; i++ {
 		repeated += n

@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestIteration(t *testing.T) {
-	repeated := Repeat("a")
+	repeated := Repeat("a", 5)
 	expected := "aaaaa"
 	if repeated != expected {
 		t.Errorf("got %q expected %q", repeated, expected)
@@ -12,6 +12,6 @@ func TestIteration(t *testing.T) {
 
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Repeat("a")
+		Repeat("a", 5)
 	}
 }

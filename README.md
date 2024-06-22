@@ -31,3 +31,5 @@ golangci-lint run
 - `Lowercase Functions`: Unexported, private to the package. aka `Private functions`
 
 
+
+
