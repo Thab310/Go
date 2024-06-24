@@ -32,4 +32,25 @@ func TestSlice(t *testing.T) {
 			t.Errorf("got %v want %v", got, want)
 		}
 	})
+
+	t.Run("Test sum of all tails in collection", func(t *testing.T) {
+		inputA := []int{2, 3, 4, 5}
+		inputB := []int{3, 5}
+		inputC := []int{5, 5, 5}
+
+		got := SumAllTails(inputA, inputB, inputC)
+		want := []int{12, 5, 10}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %v want %v", got, want)
+		}
+	})
+	t.Run("safely sum empty slices", func(t *testing.T) {
+		got := SumAllTails([]int{}, []int{3, 4, 5})
+		want := []int{0, 9}
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %v want %v", got, want)
+		}
+	})
 }

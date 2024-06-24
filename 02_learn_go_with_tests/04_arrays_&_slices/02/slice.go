@@ -19,12 +19,16 @@ func SumAll(slices ...[]int) []int {
 	return sums
 }
 
-func main() {
-	a := []int{2, 3, 4}
-	b := []int{5, 5}
-	c := []int{1, 1, 1, 1}
+func SumAllTails(slices ...[]int) []int {
+	var sums []int
+	for _, k := range slices {
+		if len(k) == 0 {
+			sums = append(sums, 0)
+		} else {
+			tail := k[1:]
+			sums = append(sums, Sum(tail))
+		}
+	}
 
-	SumAll(a)
-	SumAll(a, b)
-	SumAll(a, b, c, c)
+	return sums
 }
