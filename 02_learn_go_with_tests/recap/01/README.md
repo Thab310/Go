@@ -14,3 +14,5 @@ Writing a test is just like writing a function, with a few rules
 * The test function takes one argument only t *testing.T
 
 * To use the *testing.T type, you need to import "testing", like we did with fmt in the other file
+
+t.Helper() is needed to tell the test suite that this method is a helper. By doing this, when it fails, the line number reported will be in our function call rather than inside our test helper.
