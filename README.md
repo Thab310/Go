@@ -5,6 +5,9 @@ Material Used:
 - [Net Ninja](https://www.youtube.com/watch?v=etSN4X_fCnM&list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM)
 
 - [Go: The Complete Developer's Guide (Golang)](https://www.udemy.com/course/go-the-complete-developers-guide/)
+
+- [Learn go for beginners crash course](https://www.udemy.com/course-dashboard-redirect/?course_id=4001218)
+
 2. Docs
 - [Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests)
 - [Effective Go](https://go.dev/doc/effective_go)
