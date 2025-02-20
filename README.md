@@ -28,7 +28,7 @@ golangci-lint run
 ```
 
 >[!TIP]
-1. In Go, the capitalization of the first letter of a function (or any identifier) determines its visibility and accessibility outside of its defining package. This is a key aspect of Go's visibility rules and is part of the language's convention for organizing code. Here's the explanation:
+In Go, the capitalization of the first letter of a function (or any identifier) determines its visibility and accessibility outside of its defining package. This is a key aspect of Go's visibility rules and is part of the language's convention for organizing code. Here's the explanation:
 
 - `Capitalized Functions`: Exported, accessible from other packages. aka `Public functions`
 - `Lowercase Functions`: Unexported, private to the package. aka `Private functions`
