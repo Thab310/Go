@@ -2,6 +2,7 @@ package slice
 
 import (
 	"fmt"
+	"slices"
 	"testing"
 )
 
@@ -26,4 +27,13 @@ func ExampleSum() {
 	numbers := []int{2, 2, 2, 2, 2}
 	fmt.Println(Sum(numbers))
 	//output: 10
+}
+
+func TestSumAll(t *testing.T) {
+	got := SumAll([]int{2, 8}, []int{2, 2, 6})
+	want := []int{10, 10}
+
+	if !slices.Equal(got, want) {
+		t.Errorf("got %v want %v", got, want)
+	}
 }
