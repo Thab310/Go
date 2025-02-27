@@ -14,25 +14,21 @@ func TestPerimeter(t *testing.T) {
 }
 
 func TestArea(t *testing.T) {
-	t.Run("Area of a rectangle", func(t *testing.T) {
-		rectangle := Rectangle{10, 2}
-
-		got := rectangle.Area()
-		want := 20.0
-
+	checkArea := func(t testing.TB, shape Shape, want float64) {
+		t.Helper()
+		got := shape.Area()
 		if got != want {
 			t.Errorf("got %g want %g", got, want)
 		}
+	}
+	t.Run("Area of a rectangle", func(t *testing.T) {
+		rectangle := Rectangle{10, 2}
+		checkArea(t, rectangle, 20.0)
 	})
 
 	t.Run("Area of a circle", func(t *testing.T) {
 		circle := Circle{10}
-		got := circle.Area() //confused about assigning a method to got #Find more examples!
-		want := 314.1592653589793
-
-		if got != want {
-			t.Errorf("got %g want %g", got, want)
-		}
+		checkArea(t, circle, 314.1592653589793)
 	})
 
 }
