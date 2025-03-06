@@ -4,10 +4,10 @@ type Wallet struct {
 	balance int
 }
 
-func (w Wallet) Deposit(amount int) {
-
+func (w *Wallet) Deposit(amount int) {
+	(*w).balance += amount
 }
 
-func (w Wallet) Balance() float64 {
-	return float64(w.balance)
+func (w *Wallet) Balance() int {
+	return (*w).balance
 }
